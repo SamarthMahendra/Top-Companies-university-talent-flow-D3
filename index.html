@@ -323,7 +323,7 @@ sankey.update(graph);
             .style("stroke-opacity", 0.6)
             .on("mouseover", function(d) {
                 d3.selectAll(".link").style("stroke-opacity", 0.4);
-                d3.select(this).style("stroke-opacity", 0.6);
+                d3.select(this).style("stroke-opacity", 0.9);
                 tooltip.style("opacity", 1)
                     .html(`<strong>${d.source.name} → ${d.target.name}</strong><br>${format(d.value)} alumni`)
                     .style("left", (d3.event.pageX + 5) + "px")
